@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="./assets/css/loginCSS.css">
+    <script src="./assets/js/loginJS.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" id="login-btn">Login</button>
+                <button type="button" class="toggle-btn" id="reg-btn">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="./assets/login-imgs/f.png">
+                <img src="./assets/login-imgs/g.png">
+                <img src="./assets/login-imgs/t.png">
+            </div>
+
+            <div id="display-form">
+                <form id="login-form" class="form-data">
+                    <input type="text" name="userID" id="userID" placeholder="Enter username" required
+                        class="input-field">
+                    <input type="password" name="password" id="userPassword" placeholder="Enter Password" required
+                        class="input-field">
+                    <input type="checkbox" class="check-box"> <span>Remember password</span>
+                    <input type="submit" value="Login" class="submit-btn">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

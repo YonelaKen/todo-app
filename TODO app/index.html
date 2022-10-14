@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="./assets/css/todoCSS.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="./assets/js/firebase.js"></script>
+    <script src="./assets/js/firebaseWokerJS.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <div class="title">
+                TODO
+            </div>
+
+            <div class="theme">
+                <img src="./assets/todo-imgs/icon-sun.svg" alt="Sun Icon Image">
+            </div>
+        </div>
+
+        <div class="new-todo">
+
+            <div class="check">
+                <div class="check-mark"></div>
+            </div>
+
+            <div class="new-todo-input">
+                <form id="todo-form">
+                    <input type="text" id="todo-input" placeholder="Add a new to do" required>
+                </form>
+            </div>
+        </div>
+
+        <div class="todo-items-wrapper">
+            <div class="todo-items">
+                <!--This is the actual to item-->
+                <div class="todo-item">
+                    <div id="checkItemAsDone" class="check">
+                        <div data-id="1" class="check-mark checked">
+                            <img src="./assets/todo-imgs/icon-check.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="todo-text checked">
+                        Cut the lawn
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <div id="checkItemAsDone" class="check">
+                        <div data-id="2" class="check-mark">
+                            <img src="./assets/todo-imgs/icon-check.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="todo-text">
+                        Testing
+                    </div>
+                </div>
+            </div>
+
+            <div class="todo-items-info">
+                <div class="items-left">
+                    <!--The number of items left-->
+                    0 items
+                </div>
+
+                <div class="items-statuses">
+                    <span class="active">All</span>
+                    <span>Active</span>
+                    <span>Completed</span>
+                </div>
+                <div class="items-clear">
+                    <span>Clear Completed</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
