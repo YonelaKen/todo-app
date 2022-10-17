@@ -3,7 +3,7 @@ function setUpLoginBtn() {
 	login.addEventListener("submit", (event) => {
 		event.preventDefault();
 		//Send data to firebase AND redirect to the correct page
-		window.location.href = "index.html";
+		window.location.href = "todo.html";
 	});
 }
 
@@ -12,7 +12,7 @@ function setUpRegisterBtn() {
 	register.addEventListener("submit", (event) => {
 		event.preventDefault();
 		//Send data to firebase AND redirect to the correct page
-		window.location.href = "index.html";
+		window.location.href = "todo.html";
 	});
 }
 
@@ -24,7 +24,7 @@ function googleBtn() {
 			.auth()
 			.signInWithPopup(provider)
 			.then((result) => {
-				window.location.href = "index.html"
+				window.location.href = "todo.html"
 			})
 			.catch((error) => {
 				// Handle Errors here.
