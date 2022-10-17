@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Register</title>
     <link rel="stylesheet" href="./assets/css/loginCSS.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="./assets/js/firebase.js"></script>
     <script src="./assets/js/loginJS.js"></script>
 </head>
 
@@ -19,9 +23,7 @@
                 <button type="button" class="toggle-btn" id="reg-btn">Register</button>
             </div>
             <div class="social-icons">
-                <img src="./assets/login-imgs/f.png">
-                <img src="./assets/login-imgs/g.png">
-                <img src="./assets/login-imgs/t.png">
+                <img id="google-auth" src="./assets/login-imgs/g.png">
             </div>
 
             <div id="display-form">
@@ -34,7 +36,6 @@
                     <input type="submit" value="Login" class="submit-btn">
                 </form>
             </div>
-
         </div>
     </div>
 </body>

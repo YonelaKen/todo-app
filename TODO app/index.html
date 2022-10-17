@@ -12,7 +12,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
     <script src="./assets/js/firebase.js"></script>
-    <script src="./assets/js/firebaseWokerJS.js"></script>
+    <script src="./assets/js/todoJS.js"></script>
 </head>
 
 <body>
@@ -76,12 +76,12 @@
                 </div>
 
                 <div class="items-statuses">
-                    <span class="active">All</span>
-                    <span>Active</span>
-                    <span>Completed</span>
+                    <span id="all-items" class="active" >All</span>
+                    <span id="active-items">Active</span>
+                    <span id="completed-items">Completed</span>
                 </div>
                 <div class="items-clear">
-                    <span>Clear Completed</span>
+                    <span id="clear-completed-items">Clear Completed</span>
                 </div>
             </div>
         </div>
