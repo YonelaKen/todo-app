@@ -3,6 +3,8 @@ This is a todo web app using html,css, javascript and firebase.
 
 # Firebase
 The firebase services version used is  v8.
+> Cloud Firestore Database
+> Google sign in
 
 # Login
 The application can login using email and google auth both supported by firebase.
