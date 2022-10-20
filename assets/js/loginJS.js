@@ -44,7 +44,7 @@ function loginForm() {
 	loginBtn.addEventListener("click", () => {
 		const displayForm = document.getElementById("display-form");
 		displayForm.innerHTML = `<form id="login-form" class="form-data">
-                    <input type="text" name="userID" id="userID" placeholder="Enter username" required class="input-field">
+                    <input type="email" name="userID" id="userID" placeholder="Enter email" required class="input-field">
                     <input type="password" name="password" id="userPassword" placeholder="Enter Password" required class="input-field">
                     <input type="checkbox" class="check-box"> <span>Remember password</span>
                     <input type="submit" value="Login" class="submit-btn">
@@ -60,7 +60,6 @@ function registerForm() {
 	regBtn.addEventListener("click", () => {
 		const displayForm = document.getElementById("display-form");
 		displayForm.innerHTML = `<form id="register-form" class="form-data">
-        <input type="text" name="userID" id="userID" placeholder="Enter username" required class="input-field">
         <input type="email" name="userEmail" id="userEmail" required class="input-field" placeholder="Enter email">
         <input type="password" name="password" id="userPassword" placeholder="Enter Password" required class="input-field">
         <input type="checkbox" class="check-box"> <span>I agree to the terms & conditions</span>
